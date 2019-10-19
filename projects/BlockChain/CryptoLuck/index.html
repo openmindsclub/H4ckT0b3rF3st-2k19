@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CryptoLuck</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.2/math.min.js" defer></script>
+    <script src="static/Vue.js" defer></script>
+    <script src="static/app.js" defer></script>
+    <script language="javascript" type="text/javascript" src="static/cryptoLuckAbi.js"></script>
+    <script src="vue/dist/vue-carousel.js"></script>
+  </head>
+
+  <body >
+
+    <section class="main">
+      <figure class="image container is-128x128">
+        <img src="static/img/logo.png">
+      </figure>
+
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis ultrices erat fermentum faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris quis massa vitae felis malesuada accumsan eu a urna. Morbi ut sollicitudin risus. Phasellus malesuada cursus elit, nec imperdiet est cursus vel. Sed malesuada congue magna, at consectetur est ornare eu. Ut faucibus erat at fermentum placerat. Vivamus eu varius lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam eget maximus est. Curabitur non bibendum turpis. Nunc eu massa ac mauris convallis cursus.</p>
+      </div>
+
+
+
+      <div id="app">
+          <div class="container has-text-centered" >
+            <p>{{ time.join(":") }}</p>
+          </div>
+          <div class="column is-4 is-offset-4 is-mobile"><carousel :data="images"></carousel></div>
+              <form @submit.prevent="submitForm" class="column is-2 is-offset-5" method="post">
+                  <div v-for="(item,f) in fields">
+                    <div class="field">
+                        <label class="label" :for="f">{{ f }}</label>
+                        <p class="control">
+                          <input :v-model="f" :type="item" :name="f" />
+                        </p>
+                    </div> 
+                  </div>             
+                  <div class="field">
+                      <div class="control">
+                          <button class="button is-primary">Submit</button>
+                      </div>
+                  </div>
+              </form>
+          
+          <!--
+          <div class="container">
+            <transition-group name="fade" tag="div">
+              <div v-for="i in [currentIndex]" :key="i">
+                <figure class="image container">
+                  <img :src="currentImg" />
+                </figure>
+              </div>
+            </transition-group>
+            <p class="prev" @click="prev" href="#">&#10094; Previous</p>
+            <p class="next" @click="next" href="#">&#10095; Next</p>
+        </div>-->
+
+      </div>
+    </section>
+  </body>
+
+</html>
