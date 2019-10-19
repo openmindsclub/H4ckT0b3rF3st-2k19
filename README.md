@@ -18,7 +18,7 @@ Whether you are :<br/>
 you can help the **growth** of open source and make positive contributions to the community. All backgrounds and skill levels are encouraged to complete the **challenges**!
 ​
 ## How to make your first contribution?
-You should familiarize yourself with How To Create a Pull Request, check the Getting Started section ~they can be made in any GitHub-hosted repositories/projects~.
+You should familiarize yourself with How To Create a Pull Request, check the Getting Started section they can be made in any GitHub-hosted repositories/projects.
 ​
 ## What can you earn ?
 In addition to having lots of fun, eating some good snacks, adding some new nerds to your social network, you can earn a **limited version t-shirt** if you happen to be among the first 50,000 participants who successfully complete the challenge!
