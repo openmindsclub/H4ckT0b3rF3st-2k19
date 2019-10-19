@@ -44,7 +44,7 @@ Hacktoberfest participants, so far, have represented 151 countries and thousands
 2. Fork this repo
 3. Clone your fork,this will create a directory holding the name of the repo
 ``` bash
-git clone https://github.com/openmindsclub/
+git clone https://github.com/YOURUSERNAME/H4ckT0b3rF3st-2k19.git
 ```
 4. Go to the cloned directory and make changes
 5. Commit your changes,verify your changes and push to teh forked repo
