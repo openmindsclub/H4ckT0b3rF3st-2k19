@@ -9,18 +9,26 @@
     },
     {
     "quote":"Lmenghi gizmawen yiwen was win kdjan koulas",
-    "language":"kabyl-Latin",
+    "language":"Amazigh",
     "translation":"The quarrels between lions last only one day, the one between dogs last many days",
     "region":"Kabylie",
     "meaning":"Valiants do not seek conflict",
     "author":""
-    }
+    },
     {
     "quote":"الشطحة في راصي لوكان جات في رجليا",
     "language": "Arabic",
     "translation": "If the dance in my mind was on my feet",
     "region": "Batna",
     "meaning":"I know how to do that thing in theory but i cant apply it in real life",
-    "author":"Grandma",
+    "author":"Grandma"
+    },
+    {
+    "quote":"mathecha thecha mouch thaqeser",
+    "language":"Amazigh",
+    "translation":"If it works it works and if it doesn't work then I'm joking.",
+    "region":"Kabylie",
+    "meaning":"If you get caught trying to manipulate someone, then play it as a joke",
+    "author":"Mom"
     }
 ]
