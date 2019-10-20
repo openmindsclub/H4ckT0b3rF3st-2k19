@@ -49,4 +49,4 @@ This project aim to create a collection of Algerian proverbs / quotes from your 
     }
 ]
 ```
- P.S :  json elements are separated by a comma.
+ P.S :  json's values  are separated by a comma and so are the JSONs in the array.
