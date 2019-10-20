@@ -1,7 +1,7 @@
 # Scrape My Framework:
 
 ### **Task:** 
-For a javaScript programmer, it is often hard to stay updated with the frameworks release, to simplify the task, you have to code a python script that scrapes a web site and print the newest, trandiest and most popular frameworks using **BeautifulSoup**!
+For a javaScript programmer, it is often hard to stay updated with the frameworks release, to simplify the task, you have to code a python script that scrapes a web site and print the newest, trandiest and most popular frameworks using **BeautifulSoup**
 ### **Tools:**
 + The webSite : [JavaScripting](https://www.javascripting.com/)
 + The Library  : [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start)
