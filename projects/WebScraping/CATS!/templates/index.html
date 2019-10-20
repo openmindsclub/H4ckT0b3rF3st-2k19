@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cat Kings and Queens</title>
+    <link rel="stylesheet" href={{url_for('static',filename="style.css")}}>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+</head>
+<body>
+   <header>
+       <div class="Header">
+            <p class="h0-mktg" style="margin: auto;">Reddit Cats</p>
+           <a href="https://github.com/openmindsclub/H4ckT0b3rF3st-2k19" type="button" class="btn btn-outline" > Back to Challenges</a>
+       </div>
+     
+   </header>
+        <div class="grid">
+                <div class="grid-sizer"></div>
+                {% for i in src%}
+                <div class="grid-item">
+                  <img src={{i}} class="img"/>
+                </div>
+               {%endfor%}
+              </div>
+              
+    <script>
+ var grid = document.querySelector('.grid');
+
+var msnry = new Masonry( grid, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+
+imagesLoaded( grid ).on( 'progress', function() {
+  // layout Masonry after each image loads
+  msnry.layout();
+});
+
+    </script>
+</body>
+</html>
