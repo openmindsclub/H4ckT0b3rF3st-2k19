@@ -41,7 +41,7 @@ This project aim to create a collection of Algerian proverbs / quotes from your 
     },
     {
     "quote":"Lmenghi gizmawen yiwen was win kdjan koulas",
-    "language":"kabyl-Latin",
+    "language":"Amazigh",
     "translation":"The quarrels between lions last only one day, the one between dogs last many days",
     "region":"Kabylie",
     "meaning":"Valiants do not seek conflict",
