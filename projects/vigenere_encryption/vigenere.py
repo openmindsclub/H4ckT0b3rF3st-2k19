@@ -15,7 +15,7 @@ def vigenereEncrypt(plain_text, key):
 	k = 0
 	while i < len(plain_text):
 		if plain_text[i] in alpha:
-			cipher_text += alpha[( alpha.find(plain_text[i] ) + alpha.find( key[k % len(key)] ) +1 ) % len(alpha)]
+			cipher_text += alpha[( alpha.find(plain_text[i] ) + alpha.find( key[k % len(key)] ) ) % len(alpha)]
 			i += 1
 			k += 1
 		else:
