@@ -1,0 +1,4 @@
+usage :
+	vigenere.py is program that encrypt/decrypt text using vigenere method.
+options :
+	--interactive : to run interactively.
