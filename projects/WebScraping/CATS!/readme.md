@@ -1,5 +1,5 @@
 # CAT PICTURE SCRAPER :
-### who doesn't like cats, right ? ,here we wan't to create a web site full of cat pictures and the best one are in [`/r/cats`](https://old.reddit.com/r/cats/ "Cats Subreddit.")
+### who doesn't like cats, right ? here we wan't to create a web site full of cat pictures and the best one are in [`/r/cats`](https://old.reddit.com/r/cats/ "Cats Subreddit.")
 
 ## **DONE** :
 + Flask web app
