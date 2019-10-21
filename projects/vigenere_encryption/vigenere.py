@@ -3,6 +3,7 @@ import string
 import sys
 
 alpha  = string.lowercase
+beta = string.uppercase
 def documentation():
 	f = open('documentation.txt', 'r')
 	doc = f.read()
@@ -18,7 +19,11 @@ def vigenereEncrypt(plain_text, key):
 			cipher_text += alpha[( alpha.find(plain_text[i] ) + alpha.find( key[k % len(key)] ) ) % len(alpha)]
 			i += 1
 			k += 1
-		else:
+		elif plain_text[i] in beta:
+			cipher_text += beta[( beta.find(plain_text[i] ) + beta.find( key[k % len(key)] ) ) % len(beta)]
+			i += 1
+			k += 1
+		else :
 			cipher_text += plain_text[i]
 			i += 1
 	return cipher_text
