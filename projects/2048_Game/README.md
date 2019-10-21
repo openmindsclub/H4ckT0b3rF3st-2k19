@@ -5,7 +5,8 @@ Using the library "ncurses" which is a library that provides
 a "GUI-like" interface that runs under a terminal.
 
 ## Usage
-Ncurses is not a built-in library, so you need to install it.
+Ncurses is not a built-in library, so you need to install it.<br/>
+
 On Ubuntu/Debian
 
 ```bash
@@ -40,16 +41,16 @@ If everything went well, run it
 
 The rules of the 2048 game are quite simple you
 just need to combine tiles that have the same value
-to make another tile with larger number. you win
+to make another tile with larger number.<br/>
 the goal is to create a tile with the number 2048.
 However you can still play the game until you lose.
 
-Press arrows to make a move.
-Press 'q' to quit the game.
-Press 'r' to reset the game.
------ TODO ----------
-Press 'u' to UNDO the move you just did.
-Press 'p' to exit the game BUT save the state
+Press arrows to make a move.<br/>
+Press 'q' to quit the game.<br/>
+Press 'r' to reset the game.<br/>
+----- TODO ----------<br/>
+Press 'u' to UNDO the move you just did.<br/>
+Press 'p' to exit the game BUT save the state<br/>
 
 ## Tasks
 
@@ -68,4 +69,4 @@ Press 'p' to exit the game BUT save the state
 
 PS: you can change game mode (4x4, 5x5,6x6) by changing value of constant NB in constants.h
 
-### Enjoy
+### Enjoy !!!
