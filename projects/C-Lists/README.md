@@ -36,12 +36,13 @@ gcc main.c list.c -o mylist
 
 3. Any value you add will be added at the begining, keep it but add other functions to append at the end of the list.
 
-4. Add some useful functions like: 
+4. Add some other useful functions as well, such as: 
    - list_size(List* l)
    - list_remove(int index)
    - list_destroy(List* l)
    - list_getvalue(int index)
    - list_getindex(int value)
+   - list_pop()
 
 5. Be creative :)
 
