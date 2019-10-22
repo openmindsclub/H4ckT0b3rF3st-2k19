@@ -1,12 +1,12 @@
-# Python Beginner Soup: Lists
+# Python Beginner Soup
 
-Welcome to Python Beginner Soup! This is a soup of short python snippets. But for an unknown reason, most of these codes are returning some kind of *error*... I'm a total sucker at Python, can you please help me find the errors and correct them?
+Welcome to Python Beginner Soup! This is a soup of short python programs. But for an unknown reason, most of these codes are returning some kind of *error*... I'm a total sucker at Python, can you please help me find the errors and correct them?
 
 ## How To Contribute
 
-In each snippet, you can contribute either by correcting **spelling mistakes**, **syntax** or **semantics errors**, or, if you're feeling crazy, you can contribute by **improving the code** altogether!
+In each program, you can contribute either by correcting **spelling mistakes**, **syntax** or **semantics errors**, or, if you're feeling kinda crazy, you can contribute by **improving the code** altogether!
 
-Sometimes, the code can be shortened to *one line* of Python... Don't worry, the changes that need to be done will all be specified in each snippet!
+Sometimes, the code can be shortened to *one line* of Python... Don't worry, the changes that need to be done will all be specified in a comment inside each snippet!
 
 ## Documentation
 
@@ -28,9 +28,8 @@ The snippet below removes all white spaces:
 ```
 >>> tmpstring = "  hadi      string    ya   kho "
 >>> result = tmpstring.split()
-
 ```
-Then the `result` contains:
+Then the `result` will contain:
 ```
 ['hadi', 'string', 'ya', 'kho']
 ```
@@ -41,7 +40,7 @@ Then the `result` contains:
 >>> listofstrings = ['h', 'a', 'c', 'k']
 >>> result = "//".join(listofstrings)
 ```
-The the result will contains:
+The the result will contain:
 ```
 h//a//c//k
 ```
@@ -49,19 +48,18 @@ Just like with `split`, in `join` if you don't add any character, it merges the 
 
 ```
 >>> listofstrings = ['OP3N', 'M1ND5', 'CLUB']
->>> result = "".joing(listofstrings)
-
+>>> result = "".join(listofstrings)
 ```
 
-Then the `result` contains:
+Then the `result` will contain:
 ```
 Op3NM1ND5CLUB
 ```
-See the [Python documentation about strings](https://docs.python.org/3.3/library/stdtypes.html?highlight=set#set) for more information.
+See the [Python documentation about strings](https://docs.python.org/3/library/string.html) for more information.
 
-### List comprehension
+## List comprehension
 
-The idea behind list comprehension is to condense the for loop and the list appending into one simple line. You can also embed if statements into the list comprehension — check out [this reference](https://docs.python.org/3/library/string.html) to help you out.
+The idea behind list comprehension is to condense the for loop and the list appending into one simple line. You can also embed if statements into the list comprehension — check out [this reference](https://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html) to help you out.
 
 **Example:**
 We want to create a list of squares:
@@ -79,7 +77,7 @@ squares = [x**2 for x in range(10)]
 ```
 Which is more readable.
 
-### Sets:
+## Sets:
 The features of sets are:
 * They are not ordered
 * There are no repeated elements in sets
