@@ -2,7 +2,7 @@
 
 #### [saidziani](https://github.com/saidziani)
 
-#### [sellc0d3](https://github.com/shellc0d3)
+#### [shellc0d3](https://github.com/shellc0d3)
 
 #### [RacimRgh](https://github.com/RacimRgh)
 
