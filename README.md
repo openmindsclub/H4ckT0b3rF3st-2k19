@@ -2,6 +2,15 @@
 
 ![Event logo](https://www.pixenli.com/image/eNnSurAg)
 ​
+
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-175x29.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+
+![GitHub Contributors](https://img.shields.io/github/contributors/openmindsclub/H4ckT0b3rF3st-2k19?logo=GitHub&style=for-the-badge)
+
+![GitHub Watchers](https://img.shields.io/github/watchers/openmindsclub/H4ckT0b3rF3st-2k19?label=Watch&logo=GitHub&style=for-the-badge)
+![GitHub Stars](https://img.shields.io/github/stars/openmindsclub/H4ckT0b3rF3st-2k19?logo=GitHub&style=for-the-badge)
+![GitHub Forks](https://img.shields.io/github/forks/openmindsclub/H4ckT0b3rF3st-2k19?label=Forks&logo=GitHub&style=for-the-badge)
   
   We hope that this event may be the first step in your long journey of contributing to free Open-Source projects.
   By hosting Hacktoberfest 2019 in USTHB, the family of OpenMinds Club strives to encourage everyone in contributing to free Open-Source projects as it has been, and will always remain our philosophy and fundamental goal.<br/> This repository is open to anyone and everyone who seeks to contribute in any project they've liked or discovered. As for the beginners, you are welcome to join our Hacktoberfest as well! Make sure you learn more about [open source](https://github.com/open-source).<br/>
