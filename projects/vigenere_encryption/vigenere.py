@@ -1,31 +1,25 @@
 #!/usr/bin/env python2
-import string 
+from  string import lowercase, uppercase
+from itertools import cycle
 import sys
 
-alpha  = string.lowercase
-beta = string.uppercase
 def documentation():
 	f = open('documentation.txt', 'r')
 	doc = f.read()
 	print doc
 	f.close()
 
+
 def vigenereEncrypt(plain_text, key):
 	cipher_text = ''
-	i = 0
-	k = 0
-	while i < len(plain_text):
-		if plain_text[i] in alpha:
-			cipher_text += alpha[( alpha.find(plain_text[i] ) + alpha.find( key[k % len(key)] ) ) % len(alpha)]
-			i += 1
-			k += 1
-		elif plain_text[i] in beta:
-			cipher_text += beta[( beta.find(plain_text[i] ) + beta.find( key[k % len(key)] ) ) % len(beta)]
-			i += 1
-			k += 1
+	keyStep=cycle([lowercase.find(k) if lowercase.find(k) !=-1 else 0 for k in key.lower()])
+	for letter in plain_text:
+		if letter in lowercase:
+			cipher_text += lowercase[( lowercase.find(letter ) + next(keyStep)) % 26]
+		elif letter in uppercase:
+			cipher_text += uppercase[( uppercase.find(letter ) + next(keyStep)) % 26]
 		else :
-			cipher_text += plain_text[i]
-			i += 1
+			cipher_text += letter
 	return cipher_text
 
 
