@@ -4,4 +4,5 @@
 #### [RacimRgh](https://github.com/RacimRgh)
 #### [cr105ph1nx](https://github.com/cr105ph1nx)
 #### [0x13A0F](https://github.com/0x13A0F)
+#### [jkirpalani](https://github.com/jkirpalani)
 #### [Yonas](https://github.com/YuYuna)
