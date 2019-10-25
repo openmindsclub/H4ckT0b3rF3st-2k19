@@ -3,7 +3,9 @@
 ![Event logo](https://www.pixenli.com/image/eNnSurAg)
 ​
 
-[![Open Source Love png3](https://badges.frapsoft.com/os/v3/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2019/openmindsclub/H4ckT0b3rF3st-2k19?color=FF1493&label=OpenMinds%20Club%20Is%20Joining%20Hacktoberfest)
 
 [![GitHub contributors](https://img.shields.io/github/contributors/openmindsclub/H4ckT0b3rF3st-2k19)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/)
 [![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/openmindsclub/H4ckT0b3rF3st-2k19)](https://GitHub.com/Naereen/StrapDown.js/pull/)
@@ -40,7 +42,8 @@ you can help the **growth** of open source and make positive contributions to th
 ## You're welcome !
   Hacktoberfest participants, so far, have represented 151 countries and thousands of unique skill-sets. Its program welcomes everyone already in the open source software community – and, as a matter of coure, anyone interested in diving in!
 ​
-#### Happy hacking !!
+
+[![Generic badge](https://img.shields.io/badge/Openminds%20Club%20Wishes%20All%20The%20Participants-A%20Very%20Spooky%20Hacking!!-orange.svg)](https://shields.io/)
 
 ## Getting Started - Basic
 1. Fork this Repo, just click on the Fork button in the top right corner of the page, it'll create an exact copy of this repo in your account.
@@ -120,3 +123,4 @@ Make a unique design for octocat and share it with the rest of the world:
 * Save your Octocat to username_octocat'sname_octocat.png e.g: Qtty_Tux_octocat.png
 * Upload the file to /myOctocat directory and do a pull request!
 
+[![Generic badge](https://img.shields.io/badge/Made%20With-Love-FF1493.svg)](https://shields.io/)
