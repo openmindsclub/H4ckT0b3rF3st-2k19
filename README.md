@@ -5,13 +5,14 @@
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-175x29.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
+[![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/openmindsclub/H4ckT0b3rF3st-2k19)](https://GitHub.com/Naereen/StrapDown.js/pull/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/openmindsclub/H4ckT0b3rF3st-2k19)](https://GitHub.com/Naereen/StrapDown.js/pull/)
+[![GitHub contributors](https://img.shields.io/github/contributors/openmindsclub/H4ckT0b3rF3st-2k19)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/)
 
-![GitHub Contributors](https://img.shields.io/github/contributors/openmindsclub/H4ckT0b3rF3st-2k19?logo=GitHub&style=for-the-badge)
+[![GitHub watchers](https://img.shields.io/github/watchers/openmindsclub/H4ckT0b3rF3st-2k19?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/watchers/)
+[![GitHub stars](https://img.shields.io/github/stars/openmindsclub/H4ckT0b3rF3st-2k19?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/openmindsclub/H4ckT0b3rF3st-2k19?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/network/)
 
-![GitHub Watchers](https://img.shields.io/github/watchers/openmindsclub/H4ckT0b3rF3st-2k19?label=Watch&logo=GitHub&style=for-the-badge)
-![GitHub Stars](https://img.shields.io/github/stars/openmindsclub/H4ckT0b3rF3st-2k19?logo=GitHub&style=for-the-badge)
-![GitHub Forks](https://img.shields.io/github/forks/openmindsclub/H4ckT0b3rF3st-2k19?label=Forks&logo=GitHub&style=for-the-badge)
-  
   We hope that this event may be the first step in your long journey of contributing to free Open-Source projects.
   By hosting Hacktoberfest 2019 in USTHB, the family of OpenMinds Club strives to encourage everyone in contributing to free Open-Source projects as it has been, and will always remain our philosophy and fundamental goal.<br/> This repository is open to anyone and everyone who seeks to contribute in any project they've liked or discovered. As for the beginners, you are welcome to join our Hacktoberfest as well! Make sure you learn more about [open source](https://github.com/open-source).<br/>
   There is no contribution that is either too small or insignificant. However, every pull has to, of course, follow some guidelines mentioned [here](https://hacktoberfest.digitalocean.com/details#quality-standards). All of OpenMinds Club welcomes you among our family, whether to attend our talks or complete the challenges. For us, sharing your ideas with this ever growing community is after all, no minor feat!<br/>
