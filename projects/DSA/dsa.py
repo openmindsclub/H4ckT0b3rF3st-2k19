@@ -92,46 +92,8 @@ class DSA:
 		self.public = pow(self.g,self.private,self.p)
 	
 	def sign(self,msg):
-		if self.private == None or self.public == None: self.generateKeys()
-		while True:
-			while True:
-				while True:
-					k = int(urandom(19).encode("hex"),16)
-					if(k < self.q):
-							break
-				r = pow(self.g,k,self.p) % self.q
-				if(r != 0):
-					break
-		
-			h = int(sha1(msg).hexdigest(),16)
-			s = (inverse(k,self.q) * (h + (self.private * r))) % self.q
-			if(s != 0):
-				break
-		return r,s
 
 	def verify(self,r,s,msg):
-		try:
-			assert ((r < self.q)and(r > 0))
-			assert ((s < self.q)and(s > 0))
-		except:
-			print "[-] Invalid Signature"
-			return
-		
-		w = inverse(s,self.q) % self.q
-		h = int(sha1(msg).hexdigest(),16)
-		u1 = (h * w) % self.q
-		u2 = (r * w) % self.q
-		v1 = pow(self.g,u1,self.p)
-		v2 = pow(self.public,u2,self.p)
-		v = ((v1 * v2)% self.p) % self.q
-		if(v == r):
-			print "[+] Signature confirmed"
-			return True
-		else:
-			print "[+] Calculated Value: " + str(v)
-			print "[+] Expected Value: " + str(r)
-			print "[-] Invalid signature"
-			return False
 
 if(__name__=="__main__"):
 	dsa = DSA()
