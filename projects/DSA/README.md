@@ -46,4 +46,7 @@ Here are things you can do to complete this implementation:
 * Add checks to the `sign` and `verify` methods
 * Add support for other Hashing Algorithms
 
+### Ressources
+* [Digital Signature Algorithm](https://en.wikipedia.org/wiki/Digital_Signature_Algorithm)
+
 #### Happy Hacking!
