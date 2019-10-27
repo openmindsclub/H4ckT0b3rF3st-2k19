@@ -19,4 +19,4 @@ $ python3 app.py
 6. Be creative.
 
 ## Resources
-[The best recource ever](https:/google.com)
+[The best resource ever](https://google.com)
