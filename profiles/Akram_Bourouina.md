@@ -15,4 +15,4 @@ Algiers
 
 ### Profile Link
 
-[n0x-lgtm](https://github.com/n0x-lgtm/hacktoberfest)
+[n0x-lgtm](https://github.com/n0x-lgtm)
