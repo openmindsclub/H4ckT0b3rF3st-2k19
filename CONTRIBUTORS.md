@@ -13,3 +13,5 @@
 #### [Yonas](https://github.com/YuYuna)
 
 #### [iCharge](https://github.com/icharge)
+
+#### [n0x-lgtm](https://github.com/n0x-lgtm)
