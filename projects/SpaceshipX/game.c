@@ -1,5 +1,3 @@
-//gcc game.c functions.c -lSDL2 -lSDL2_ttf -lSDL2_image
-
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,22 +7,23 @@
 #include <SDL2/SDL_timer.h>
 #include "functions.h"
 
-#define WINDOW_WIDTH 800
-#define WINDOW_HEIGHT 600
+#define WINDOW_WIDTH 920
+#define WINDOW_HEIGHT 700
+#define ROCK_NUM 10
 
 
 int main(int argc, char *argv[])
 {
 	srand(time(NULL));
 	int starting = 0, playing = 0, gameover_screen = 0, closing = 0, try_again = 0;
-	int flame = 0, rock_num = 0, no_rock_left = 0;
+	int flame = 0, no_rock_left = 0;
 	int up = 0, down = 0, left = 0, right = 0;
 
 	SDL_Window *window;
 	SDL_Renderer *renderer;
 	SDL_Surface *surface;
 	SDL_Texture *tex_bg, *tex_player, *tex_rocks, *tex_gameover;
-	SDL_Rect player_src[3], player_dst, rock_src, player_dimentions, gameover_dst;
+	SDL_Rect player_src[3], player_dst, rock_src, player_dimentions, gameover_dst, rock_dst[ROCK_NUM];
 	SDL_Event event;
 
 
@@ -88,11 +87,6 @@ int main(int argc, char *argv[])
 	gameover_dst.w = 300;
 	gameover_dst.h= 150;
 
-	//initializing the rocks
-	rock_num = WINDOW_WIDTH / rock_src.w;
-	int speed[rock_num];
-	SDL_Rect rock_dst[rock_num]; 
-
 	//initializing the source rockets
 	for (int i=0; i<3; i++)
 	{
@@ -118,7 +112,7 @@ int main(int argc, char *argv[])
 			player_dst.y = WINDOW_HEIGHT;
 
 			DisplayPlayer(&flame, renderer, tex_player, tex_bg, player_src, &player_dst, &starting, &playing, &gameover_screen, &closing);
-			UpdateRocksPositions(rock_num, speed, &rock_src, rock_dst, starting, playing, gameover_screen);
+			UpdateRocksPositions(&rock_src, rock_dst, starting, playing, gameover_screen);
 
 			starting = 0;
 			playing = !closing;
@@ -127,7 +121,7 @@ int main(int argc, char *argv[])
 		while (playing)
 		{
 			//if the player hit a rock break from playing loop and enter gameover loop
-			gameover_screen = CheckIfLost(player_dst, rock_num, rock_dst);
+			gameover_screen = CheckIfLost(player_dst, rock_dst);
 			playing = !gameover_screen;
 	
 			while (SDL_PollEvent(&event))
@@ -136,12 +130,12 @@ int main(int argc, char *argv[])
 			}
 
 			UpdatePlayerPosition(&player_dst, up, down, right, left);
-			UpdateRocksPositions(rock_num, speed, &rock_src, rock_dst, starting, playing, gameover_screen);
+			UpdateRocksPositions(&rock_src, rock_dst, starting, playing, gameover_screen);
 
 			SDL_RenderClear(renderer);
 			SDL_RenderCopy(renderer, tex_bg, NULL, NULL);	
 			
-			DisplayRocks(renderer, tex_rocks, rock_dst, rock_num, &no_rock_left, playing, gameover_screen);
+			DisplayRocks(renderer, tex_rocks, rock_dst, &no_rock_left, playing, gameover_screen);
 			DisplayPlayer(&flame, renderer, tex_player, tex_bg, player_src, &player_dst, &starting, &playing, &gameover_screen, &closing);
 
 			SDL_RenderPresent(renderer);
@@ -165,8 +159,8 @@ int main(int argc, char *argv[])
 			SDL_RenderClear(renderer);
                         SDL_RenderCopy(renderer, tex_bg, NULL, NULL);
 
-			UpdateRocksPositions(rock_num, speed, &rock_src, rock_dst, starting, playing, gameover_screen);
-			DisplayRocks(renderer, tex_rocks, rock_dst, rock_num, &no_rock_left, playing, gameover_screen);
+			UpdateRocksPositions(&rock_src, rock_dst, starting, playing, gameover_screen);
+			DisplayRocks(renderer, tex_rocks, rock_dst, &no_rock_left, playing, gameover_screen);
 			
 			SDL_RenderCopy(renderer, tex_gameover, NULL, &gameover_dst);
 			SDL_RenderPresent(renderer);
