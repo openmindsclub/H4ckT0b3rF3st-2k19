@@ -222,13 +222,13 @@ void UpdateRocksPositions(int rock_num, int *speed, SDL_Rect *rock_src, SDL_Rect
 }
 
 
-void DisplayRocks(SDL_Renderer *renderer, SDL_Texture *tex_rocks, SDL_Rect *rock_src, SDL_Rect *rock_dst, int rock_num, int *no_rock_left, int playing, int gameover_screen)
+void DisplayRocks(SDL_Renderer *renderer, SDL_Texture *tex_rocks, SDL_Rect *rock_dst, int rock_num, int *no_rock_left, int playing, int gameover_screen)
 {
 	if (playing)
 	{
 		for(int i=0; i<rock_num; i++)
 		{
-			SDL_RenderCopy(renderer, tex_rocks, rock_src, &rock_dst[i]);
+			SDL_RenderCopy(renderer, tex_rocks, NULL, &rock_dst[i]);
 		}
 	}
 	else if (gameover_screen)
@@ -237,7 +237,7 @@ void DisplayRocks(SDL_Renderer *renderer, SDL_Texture *tex_rocks, SDL_Rect *rock
 		{
 			if( (rock_dst[i].y < WINDOW_HEIGHT) && (rock_dst[i].y + rock_dst[i].h > 0) )
 			{
-				SDL_RenderCopy(renderer, tex_rocks, rock_src, &rock_dst[i]);
+				SDL_RenderCopy(renderer, tex_rocks, NULL, &rock_dst[i]);
 				*no_rock_left = 0;
 			}
 		}

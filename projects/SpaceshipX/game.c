@@ -141,7 +141,7 @@ int main(int argc, char *argv[])
 			SDL_RenderClear(renderer);
 			SDL_RenderCopy(renderer, tex_bg, NULL, NULL);	
 			
-			DisplayRocks(renderer, tex_rocks, &rock_src, rock_dst, rock_num, &no_rock_left, playing, gameover_screen);
+			DisplayRocks(renderer, tex_rocks, rock_dst, rock_num, &no_rock_left, playing, gameover_screen);
 			DisplayPlayer(&flame, renderer, tex_player, tex_bg, player_src, &player_dst, &starting, &playing, &gameover_screen, &closing);
 
 			SDL_RenderPresent(renderer);
@@ -166,7 +166,7 @@ int main(int argc, char *argv[])
                         SDL_RenderCopy(renderer, tex_bg, NULL, NULL);
 
 			UpdateRocksPositions(rock_num, speed, &rock_src, rock_dst, starting, playing, gameover_screen);
-			DisplayRocks(renderer, tex_rocks, &rock_src, rock_dst, rock_num, &no_rock_left, playing, gameover_screen);
+			DisplayRocks(renderer, tex_rocks, rock_dst, rock_num, &no_rock_left, playing, gameover_screen);
 			
 			SDL_RenderCopy(renderer, tex_gameover, NULL, &gameover_dst);
 			SDL_RenderPresent(renderer);
