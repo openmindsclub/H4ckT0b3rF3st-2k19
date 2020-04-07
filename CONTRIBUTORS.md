@@ -13,3 +13,9 @@
 #### [Yonas](https://github.com/YuYuna)
 
 #### [iCharge](https://github.com/icharge)
+
+#### [n0x-lgtm](https://github.com/n0x-lgtm)
+
+#### [dwindibudimulia](https://github.com/dwindibudimulia)
+
+#### [IndigoWizard](https://github.com/IndigoWizard)
